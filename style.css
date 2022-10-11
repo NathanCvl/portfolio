@@ -1,0 +1,57 @@
+/* Split the screen in half */
+
+body {
+    font-family: Arial, serif;
+    color: white;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+    left: 0;
+    background-color: #111;
+}
+
+/* Control the right side */
+.right {
+    right: 0;
+    background-color: #5513af;
+    /*background-image: url("https://images.unsplash.com/photo-1593720213428-28a5b9e94613?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2ViJTIwZGV2ZWxvcG1lbnR8ZW58MHx8MHx8&w=1000&q=80");*/
+}
+
+.list-btn {
+    list-style: none;
+}
+
+.list-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.right-text {
+    margin: 10px;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+    width: 150px;
+    border-radius: 50%;
+}
